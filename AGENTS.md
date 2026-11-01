@@ -87,6 +87,30 @@ Antes de implementar una funcionalidad importante:
 
 No modifiques archivos ajenos al objetivo. Antes de agregar dependencias, cambiar configuraciones importantes o hacer cambios destructivos (borrar archivos, reescribir historial de git, resetear la base de datos), explica el motivo y pide confirmación.
 
+### Ramas, commits y Linear
+
+Las tareas viven en Linear (proyecto **Turnero**, equipo `FRA`). Cada tarea tiene un ID `FRA-<n>` y su rama sugerida en la sección "Rama sugerida".
+
+**Nombre de rama:** `<tipo>/FRA-<n>-<descripcion-corta>` (minúsculas, palabras separadas por guiones, sin acentos).
+
+| Tipo | Cuándo | Ejemplo |
+|---|---|---|
+| `feat/` | Funcionalidad nueva | `feat/FRA-11-agregar-cliente` |
+| `fix/` | Corrección de un bug | `fix/FRA-18-a11y-casos-limite` |
+| `refactor/` | Cambio interno sin cambiar el comportamiento | `refactor/FRA-17-use-fila` |
+| `chore/` | Dependencias, configuración, limpieza | `chore/FRA-5-setup-dependencias` |
+| `docs/` | Documentación | `docs/FRA-6-readme-y-estructura` |
+
+**Reglas:**
+
+- Una rama por tarea; sale de `main` actualizado y vuelve a `main` mediante un PR.
+- El ID `FRA-<n>` siempre va en el nombre de la rama: así Linear liga la rama y el PR a la tarea.
+- Commits con Conventional Commits y el ID: `feat(FRA-11): validar nombre vacío`.
+- La descripción del PR incluye `Closes FRA-<n>` para cerrar la tarea al hacer merge.
+- No trabajar directamente en `main`.
+
+**Para los agentes:** al empezar una tarea, indica el nombre de rama que corresponde y verifica que no estoy en `main`. No crees ramas, commits, push ni PRs sin que te lo pida. Si un cambio no corresponde a la tarea de la rama actual, avísame en lugar de mezclarlo.
+
 ## G. Calidad y finalización
 
 - Comprueba los criterios de aceptación del requisito.
