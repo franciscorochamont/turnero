@@ -36,9 +36,9 @@ Usa solo estas tecnologías. No agregues dependencias nuevas sin explicar qué p
 
 **Comandos de verificación** (confirma en `package.json` que existen antes de ejecutarlos; si faltan, dímelo):
 
-- `npm run dev`
-- `npx tsc --noEmit`
-- `npm run lint`
+- `pnpm dev`
+- `pnpm tsc -b`
+- `pnpm lint`
 
 ## C. Reglas de mentoría
 
