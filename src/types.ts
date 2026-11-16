@@ -15,3 +15,5 @@ export type Turno = {
     estado: EstadoTurno;
     inicioAtencion?: number;
 }
+
+export type NuevoTurno = Pick<Turno, 'cliente' | 'servicio'>

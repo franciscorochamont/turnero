@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
-theme {
-      font-family: "Xmind", sans-serif;
+
+@theme {
+    --font-inter: "Inter", sans-serif;
+
+    --color-fondo: #fafaf9;
+    --color-texto: #1c1917;
+    --color-primario: #b45309;
+    --color-exito: #15803d;
+    --color-peligro: #b91c1c;
+    --color-borde: #e7e5e4;
+    --color-muted: #78716c;
+    --color-border-outline: #b45309;
 }
