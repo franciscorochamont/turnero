@@ -13,4 +13,5 @@ export type Turno = {
     cliente: string;
     servicio: Servicio;
     estado: EstadoTurno;
+    inicioAtencion?: number;
 }
